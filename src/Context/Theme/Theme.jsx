@@ -5,16 +5,17 @@ let ThemeContext = createContext()
 
 export let ThemeProvider = ({children}) =>{
 
-    let localTheme = JSON.parse(localStorage.getItem('theme')) || {
-        font: 'Space Grotesk',
-        bgColor: 'bg-gradient-to-r from-slate-900 to-slate-700',
-        color: 'text-white'
-    }
+    const localTheme = JSON.parse(localStorage.getItem('theme'))
 
     
 
     let initialState = {
-        theme : localTheme 
+        theme : localTheme || {
+        font: 'Space Grotesk',
+        bgColor: 'bg-gradient-to-r from-slate-900 to-slate-700',
+        color: 'text-white'
+    }
+    
     }
 
     let [state , dispatch] = useReducer( ThemeReducer , initialState)

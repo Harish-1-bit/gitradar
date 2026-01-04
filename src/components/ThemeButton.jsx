@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { FaPalette, FaPallet } from 'react-icons/fa'
 import ThemeContext from '../Context/Theme/Theme'
-import { themeValues } from '../Context/ThemeReducer'
+import { themeValues } from '../Context/Theme/ThemeColor'
+
 
 const ThemeButton = () => {
 

@@ -13,7 +13,6 @@ const Home = () => {
        <div className={`min-h-screen ${theme.bgColor} p-8`}>
           <Form />
           <UsersListGroup />
-
         </div>
     </div>
   )

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import { themeValues } from '../Context/ThemeReducer'
 import ThemeContext from '../Context/Theme/Theme'
 import { searchUser } from '../Context/github/GithubService'
 import Githubcontext from '../Context/github/GithubContext'

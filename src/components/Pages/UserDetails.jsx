@@ -8,7 +8,7 @@ const UserDetails = () => {
 
     let {theme} = useContext(ThemeContext)
     let {id} = useParams() 
-    let {dispatch , isLoading , user} = useContext(Githubcontext)
+    let {dispatch  , user} = useContext(Githubcontext)
 
     let getUser = async(id) =>{
         dispatch({type : 'LOADING_SCREEN'})
@@ -22,7 +22,7 @@ const UserDetails = () => {
 
     useEffect(()=>{
 getUser(id)
-    },[id])
+    },[])
 
   return (
     <div className={`min-h-screen ${theme.bgColor} ${theme.color} p-8`}>
