@@ -1,5 +1,5 @@
-import { createContext, useContext, useReducer } from "react";
-import { ThemeReducer, themeValues } from "../ThemeReducer";
+import { createContext, useReducer } from "react";
+import { ThemeReducer  } from "../ThemeReducer";
 
 let ThemeContext = createContext()
 
